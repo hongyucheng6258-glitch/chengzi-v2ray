@@ -6,8 +6,80 @@
     </Design.PreviewWith>
 
     <Style Selector="DataGrid">
-        <Setter Property="RowHeight" Value="24" />
+        <Setter Property="RowHeight" Value="30" />
         <Setter Property="ScrollViewer.AllowAutoHide" Value="False" />
+    </Style>
+
+    <Style Selector="Border.AppHeader">
+        <Setter Property="Background" Value="{DynamicResource SemiColorFill0}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SemiColorBorder}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+    </Style>
+
+    <Style Selector="Border.BrandMark">
+        <Setter Property="Background" Value="{DynamicResource SemiColorPrimary}" />
+    </Style>
+
+    <Style Selector="Border.BrandMark TextBlock">
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style Selector="TextBlock.BrandTitle">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText0}" />
+    </Style>
+
+    <Style Selector="TextBlock.BrandMeta">
+        <Setter Property="FontSize" Value="10" />
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText2}" />
+    </Style>
+
+    <Style Selector="Border.StatusPill">
+        <Setter Property="Padding" Value="9,5" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="Background" Value="{DynamicResource SemiColorSuccessLightDefault}" />
+    </Style>
+
+    <Style Selector="Border.StatusPill TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorSuccess}" />
+    </Style>
+
+    <Style Selector="Border.StatusPill.Secondary">
+        <Setter Property="Background" Value="{DynamicResource SemiColorFill1}" />
+    </Style>
+
+    <Style Selector="Border.StatusPill.Secondary TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText1}" />
+    </Style>
+
+    <Style Selector="Ellipse.StatusDot">
+        <Setter Property="Fill" Value="{DynamicResource SemiColorSuccess}" />
+    </Style>
+
+    <Style Selector="Border.ProfilesToolbar">
+        <Setter Property="Background" Value="{DynamicResource SemiColorFill0}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SemiColorBorder}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+    </Style>
+
+    <Style Selector="TextBlock.SectionTitle">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText0}" />
+    </Style>
+
+    <Style Selector="DataGrid.NodeGrid">
+        <Setter Property="Background" Value="{DynamicResource SemiColorFill0}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SemiColorBorder}" />
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText0}" />
+    </Style>
+
+    <Style Selector="DataGrid.NodeGrid /template/ DataGridColumnHeader">
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource SemiColorText1}" />
+        <Setter Property="Background" Value="{DynamicResource SemiColorFill1}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SemiColorBorder}" />
     </Style>
 
     <Style Selector="PathIcon">

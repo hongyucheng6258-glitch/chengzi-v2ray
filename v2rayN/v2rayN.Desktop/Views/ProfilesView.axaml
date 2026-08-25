@@ -9,6 +9,7 @@
     xmlns:resx="clr-namespace:ServiceLib.Resx;assembly=ServiceLib"
     xmlns:vms="clr-namespace:ServiceLib.ViewModels;assembly=ServiceLib"
     x:Name="Root"
+    Classes="ProfilesSurface"
     d:DesignHeight="450"
     d:DesignWidth="800"
     x:DataType="vms:ProfilesViewModel"
@@ -19,7 +20,9 @@
     </UserControl.Resources>
     <Grid>
         <DockPanel>
-            <WrapPanel Margin="2" DockPanel.Dock="Top">
+            <Border Classes="ProfilesToolbar" Padding="10,8" DockPanel.Dock="Top">
+                <WrapPanel>
+                <TextBlock Classes="SectionTitle" Margin="0,0,14,0" VerticalAlignment="Center" Text="节点列表" />
                 <ListBox
                     x:Name="lstGroup"
                     Margin="{StaticResource MarginLr4}"
@@ -97,14 +100,15 @@
                         </Button.Content>
                     </Button>
                 </StackPanel>
-
-            </WrapPanel>
+                </WrapPanel>
+            </Border>
             <DataGrid
                 x:Name="lstProfiles"
                 AutoGenerateColumns="False"
                 BorderThickness="1"
                 CanUserReorderColumns="True"
                 CanUserResizeColumns="True"
+                Classes="NodeGrid"
                 Classes.InsetContent="True"
                 GridLinesVisibility="All"
                 HeadersVisibility="All"
